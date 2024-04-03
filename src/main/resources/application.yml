@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: my-shop-book
+    issue:
+      max-allowed-books: 3
+      list:
+        "item1": "1"
+        "item2": "2"
+  datasource:
+    url: jdbc:mysql://localhost:3306/SpringLibrary?createDatabaseIfNotExist=TRUE
+    username: root
+    password: 11081304225q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    generate-ddl: true
+server:
+  error:
+    include-message: ALWAYS
